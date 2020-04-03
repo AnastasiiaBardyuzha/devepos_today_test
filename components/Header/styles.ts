@@ -1,8 +1,6 @@
-import React, { FC } from 'react';
-import Link from 'next/link';
 import styled from 'styled-components';
 
-const HeaderLink = styled.a`
+export const HeaderLink = styled.a`
     text-decoration: none;
     outline: none;
     text-transform: uppercase;
@@ -41,18 +39,7 @@ const HeaderLink = styled.a`
     }
 `;
 
-const HeaderWrapper = styled.div`
-  background: #008aff;
-  padding: 10px 20px;
+export const HeaderWrapper = styled.div`
+ background: #008aff;
+ padding: 10px 20px;
 `;
-
-export const Header: FC = () => (
-  <HeaderWrapper>
-    <Link href="/">
-      <HeaderLink>Latest Posts</HeaderLink>
-    </Link>
-    <Link href="/post/new">
-      <HeaderLink>New Post</HeaderLink>
-    </Link>
-  </HeaderWrapper>
-);
